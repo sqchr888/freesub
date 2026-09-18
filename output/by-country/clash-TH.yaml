@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  server: 43.159.4.80
+  server: 45.202.247.152
   port: 443
   udp: true
   type: vless
@@ -13,10 +13,9 @@ proxies:
   tls: true
   servername: cdn8848.776676.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /episode/files?ed=2560
+    path: /
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
