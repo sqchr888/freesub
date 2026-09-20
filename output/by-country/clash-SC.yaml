@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 104.17.169.13
-  port: 2053
+- name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  server: 2.27.244.164
+  port: 8443
   udp: true
   type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: inDeX.HaRMONiCA01.WORkers.DeV
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /axch1mttbxz2k55y01
+    path: /channels/act
     headers:
-      Host: inDeX.HaRMONiCA01.WORkers.DeV
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
 rules:
 - MATCH,PROXIES
