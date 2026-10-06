@@ -13,10 +13,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 02 - xiaohe",
-      "server": "91.201.65.122",
-      "server_port": 9050,
-      "method": "aes-256-cfb",
-      "password": "FG5ddLsMPbV5CutE"
+      "server": "185.164.175.81",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "vless",
@@ -30,7 +30,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -40,12 +40,46 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇮🇹 意大利 (Italy) 04 - xiaohe",
-      "server": "91.201.65.122",
-      "server_port": 9074,
-      "method": "aes-256-cfb",
-      "password": "p5wSkb2uM3pKSS3j"
+      "server": "80.211.27.249",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "fzo5i.ir46.90k.hh.ov0.kdns.fr",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/glasspanel/guest000_0_5de14443985f/",
+        "headers": {
+          "Host": "fzo5i.ir46.90k.hh.ov0.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 05 - xiaohe",
+      "server": "milan.adaspoloandco.com",
+      "server_port": 8443,
+      "uuid": "69ac162b-1643-4acb-9f49-09d8b0fad609",
+      "tls": {
+        "enabled": true,
+        "server_name": "milan.adaspoloandco.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/RoBeRt",
+        "headers": {
+          "Host": "milan.adaspoloandco.com"
+        }
+      }
     },
     {
       "type": "selector",
@@ -55,7 +89,8 @@
         "🇮🇹 意大利 (Italy) 01 - xiaohe",
         "🇮🇹 意大利 (Italy) 02 - xiaohe",
         "🇮🇹 意大利 (Italy) 03 - xiaohe",
-        "🇮🇹 意大利 (Italy) 04 - xiaohe"
+        "🇮🇹 意大利 (Italy) 04 - xiaohe",
+        "🇮🇹 意大利 (Italy) 05 - xiaohe"
       ]
     },
     {
@@ -65,7 +100,8 @@
         "🇮🇹 意大利 (Italy) 01 - xiaohe",
         "🇮🇹 意大利 (Italy) 02 - xiaohe",
         "🇮🇹 意大利 (Italy) 03 - xiaohe",
-        "🇮🇹 意大利 (Italy) 04 - xiaohe"
+        "🇮🇹 意大利 (Italy) 04 - xiaohe",
+        "🇮🇹 意大利 (Italy) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
