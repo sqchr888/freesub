@@ -5,33 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  server: 185.103.110.66
+  port: 18280
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 185.103.110.68
   port: 18283
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 170.168.4.59
-  port: 17170
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: edge10.cyrionflare.com
+  port: 2052
   udp: true
   type: vless
-  uuid: 3eec23c1-2a0d-4d53-afa5-62745a1f5ffe
-  tls: true
-  servername: northerntrail.gazette.help
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trail-grpc
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 144.31.212.253
-  port: 443
-  udp: true
-  type: hysteria2
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: vps155-edge.kermemehori.ru
-  skip-cert-verify: true
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 87.228.92.114
   port: 25481
@@ -48,35 +40,39 @@ proxies:
   grpc-opts:
     grpc-service-name: 8cb5baa18cd7
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 84.22.150.39
-  port: 7443
+  server: 144.31.212.253
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: 170.168.4.59
+  port: 17170
   udp: true
   type: vless
-  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
+  uuid: 3eec23c1-2a0d-4d53-afa5-62745a1f5ffe
   tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  servername: northerntrail.gazette.help
   skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 194.226.121.119
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trail-grpc
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  server: 65.108.3.59
   port: 443
   udp: true
   type: vless
-  uuid: ec6f8131-7a5d-4117-9627-6fb2b39ae0da
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  flow: xtls-rprx-vision
   tls: true
-  servername: drive.korroh.com
-  skip-cert-verify: false
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  servername: web.eitaa.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /remote.php/dav/89f7661a0011ce46
-    headers:
-      Host: drive.korroh.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,6 +84,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,5 +96,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
 rules:
 - MATCH,PROXIES
