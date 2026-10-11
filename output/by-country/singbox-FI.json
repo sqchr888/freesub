@@ -4,66 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
-        }
-      }
+      "server": "185.103.110.68",
+      "server_port": 18283,
+      "method": "aes-128-gcm",
+      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "144.31.212.253",
-      "server_port": 443,
-      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
-      "tls": {
-        "enabled": true,
-        "server_name": "vps155-edge.kermemehori.ru",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "65.109.188.155",
-      "server_port": 443,
-      "uuid": "a95c18d0-1b39-4bc7-8521-b62b5ab3f3f7",
-      "tls": {
-        "enabled": true,
-        "server_name": "marz.zovip2.ir",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/gropcdn",
-        "headers": {
-          "Host": "marz.zovip2.ir"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
       "server": "170.168.4.59",
       "server_port": 17170,
       "uuid": "3eec23c1-2a0d-4d53-afa5-62745a1f5ffe",
@@ -85,8 +35,20 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
+      "server": "144.31.212.253",
+      "server_port": 443,
+      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
+      "tls": {
+        "enabled": true,
+        "server_name": "vps155-edge.kermemehori.ru",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
       "server": "87.228.92.114",
       "server_port": 25481,
       "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d",
@@ -109,6 +71,52 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
+      "server": "84.22.150.39",
+      "server_port": 7443,
+      "uuid": "9d5cbb90-876b-448d-9874-27ab35bae6e7",
+      "tls": {
+        "enabled": true,
+        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaohe",
+      "server": "194.226.121.119",
+      "server_port": 443,
+      "uuid": "ec6f8131-7a5d-4117-9627-6fb2b39ae0da",
+      "tls": {
+        "enabled": true,
+        "server_name": "drive.korroh.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/remote.php/dav/89f7661a0011ce46",
+        "headers": {
+          "Host": "drive.korroh.com"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -117,7 +125,8 @@
         "🇫🇮 芬兰 (Finland) 02 - xiaohe",
         "🇫🇮 芬兰 (Finland) 03 - xiaohe",
         "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 05 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 05 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 06 - xiaohe"
       ]
     },
     {
@@ -128,7 +137,8 @@
         "🇫🇮 芬兰 (Finland) 02 - xiaohe",
         "🇫🇮 芬兰 (Finland) 03 - xiaohe",
         "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 05 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 05 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
