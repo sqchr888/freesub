@@ -5,20 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 104.18.0.1
-  port: 443
+  server: 45.205.27.78
+  port: 10443
   udp: true
-  type: vless
-  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
-  tls: true
-  servername: all.speedtest03.ccwu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: all.speedtest03.ccwu.cc
+  type: trojan
+  password: 680385f7-8664-4e87-93a6-2f9bf39d5680
+  sni: 45.205.27.78
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
